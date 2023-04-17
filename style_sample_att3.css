@@ -1,0 +1,212 @@
+/* 
+   Jimmy Clifford IDEAS Minor Portfolio
+*/
+
+/* 
+    You can import a font from Google at https://fonts.google.com/
+*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+div {
+    background-color: rgb(255, 255, 255);
+}
+
+hr {
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+}
+
+/* 
+    There is one white-div in our html_sample.html, which should have white 
+    font. 
+    You can refer in Style Sheets to ids using #.
+*/
+#white-div {
+    color: white;
+}
+
+/* 
+    You can refer in Style Sheets to classes using the dot .
+*/
+
+.css-box-model-class {
+    /* 
+        Demonstrates the CSS Box Model
+    */
+    border-width: 2px;
+    /* 
+        In order to see the border, you will need a border style.
+     */
+    border-style: solid;
+    /* 
+        You can add a margin to all four borders. If there is only one value, 
+        all borders are affected You can specify in clockwise order: 
+        top, right, bottom, left.
+    */
+    margin: 10px 5px 15px 25px;
+    /* 
+        While margins are at the outside of the border, paddings are at the 
+        inside. You can specify a single value for all four margins, but you 
+        could also specify the padding individually the as for the margins.
+    */
+    padding: 50px;
+}
+
+/* 
+    For your custom navbar, you can specify the unorderd list style.
+*/
+.navbar ul {
+    /* 
+        Remove bullet points.
+    */
+    list-style: none;
+    width:100%;
+    margin: 0 auto;
+    /* 
+        No padding.
+    */
+    padding: 0;
+    /* 
+        For navbars use background color that stands out.
+    */
+    background-color: black;
+    text-align: center;
+    position:fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    z-index:9999;
+}
+
+.fixed-nav-bar ul {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    z-index: 9999;
+}
+
+.fixed-nav-bar li {
+    width: 150 px;
+    background-color: #000;
+    /* border: 4px solid red; */
+    /* 
+        Show the navbar elements next to each other instead of on top of each 
+        other. 
+    */
+    padding: 1px;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.fixed-nav-bar a {
+    color:#fff;
+    text-decoration: none;
+}
+
+/*  
+    Style individual list items.
+*/
+.navbar li {
+    width: 150 px;
+    background-color: #000;
+    /* border: 4px solid red; */
+    /* 
+        Show the navbar elements next to each other instead of on top of each 
+        other. 
+    */
+    padding: 1px;
+    display: inline-block;
+    line-height: 30px;
+}
+
+/* 
+    Style links in navbar.
+*/
+.navbar a {
+    color:#fff;
+    text-decoration: none;
+}
+/* button for nav bar */
+.fixed-nav-bar button, .navbar button{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+table, td {
+    border: 1px solid gray;
+}
+
+
+
+/*  NEW STUFF FOR PORTFOLIO */
+
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.navbar li:hover, .fixed-nav-bar li:hover {
+    background-color: #ff5f5f;
+    color: #000;
+}
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.vid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-height: 20%;
+    position: relative;
+    margin: auto; */
+}
