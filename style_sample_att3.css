@@ -169,6 +169,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  width: 80%;
 }
 
 /* Next & previous buttons */
