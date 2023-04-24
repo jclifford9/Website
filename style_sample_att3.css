@@ -166,10 +166,10 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   position: relative;
   margin: auto;
-  width: 80%;
+  width: 70%;
 }
 
 /* Next & previous buttons */
