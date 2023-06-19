@@ -30,7 +30,10 @@
           </button>
         </li>
         <li>
-          <button class="button" onclick="window.location.href='CV.html';">
+          <button
+            class="button"
+            onclick="window.location.href='Clifford_CV-5.pdf';"
+          >
             CV
           </button>
         </li>
@@ -40,13 +43,11 @@
     <br />
     <br />
     <br />
-    <h2>Welcome to the research page!</h2>
-    <p>
-      Come back later to read descriptions of the research projects that I have
-      worked on.
-    </p>
-    <br />
-    <h3>Research Experience</h3>
+    <h1>Research Experience</h1>
+    <!-- <p>
+      Below I have outlined my research experiences. maybe some more words. Will
+      try to give an overview rather than in-depth.
+    </p> -->
     <ul>
       <li>
         Molecular Collisions Laboratory with Dr. Brian Stewart (Wesleyan
@@ -59,10 +60,259 @@
       </li>
       <li>
         Wave Transport in Complex Systems Laboratory with Dr. Tsampikos Kottos
-        (Wesleyan Univeristy, February 2021 - July 2021)
+        and Dr. Rodion Kononchuk (Wesleyan Univeristy, February 2021 - July
+        2021)
       </li>
     </ul>
+    <hr id="MC" />
+    <br />
+    <div id="navbar-2" class="fixed-nav-bar">
+      <ul>
+        <li>
+          <button
+            class="button"
+            onclick="window.location.href='research.html#MC';"
+          >
+            MC Lab
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            onclick="window.location.href='research.html#ORNL';"
+          >
+            ORNL
+          </button>
+        </li>
+        <li>
+          <button
+            class="button"
+            onclick="window.location.href='research.html#WTICS';"
+          >
+            WTICS Lab
+          </button>
+        </li>
+      </ul>
+    </div>
 
+    <h2>Molecular Collisions Laboratory (Wesleyan)</h2>
+    <img class="vid" controls src="collision.png" controls style="width: 30%" />
+    <h3>Overview</h3>
+    <p>
+      The Stewart group studies the dynamics of atom-diatom collisions both
+      computationally and experimentally. The interactions of these
+      small molecules take place on the atomic scale and thus are governed by
+      the laws of quantum mechanics. The de Broglie wavelengths of the atoms and
+      molecules in our collisions are nearly on the same order of magnitude as
+      their atomic radii. This means that the dynamics of our systems lies on
+      the edge of where classical mechanics breaks down. Since we work in this
+      "gray area" we study our systems via both quantum and quasi-classical
+      methods. Fortunately for our studies, the Li<sub>2</sub>(A<sup>1</sup>&#931<sub>u</sub><sup style="position: relative; left: -.5em;">+</sup>)-rare gas systems 
+      we study are highly classical, so we can extract valuable information from 
+      classical trajectories in addition to our exact quantum mechanical calculations.
+      <!--  The previous notation indicates that we use Li<sub>2</sub> in its first electronic excited state. -->
+    </p>
+    <p>
+      Computationally, our group primarily uses a classical trajectory program written in 
+      action angle variables by Dr. Neil Smith to study collisions in a quasi-classical manner.
+      The use of action angle variables has been shown to significantly reduce computational time and allows 
+      us to trivially determine the final rovibronic states (denoted by the vibrational and rotational quantum 
+      numbers <em>v</em> and <em>j</em> ) of our molecules. We use a modified harmonic oscillator 
+      to model the diatomic interaction and have an array of choices for the modeling of collisions.
+      The most common way we model our collision system is with an <em>ab initio</em> potential surface (one 
+      that is calculated from the principles of quantum mechanics) because they strongly agree with experimental results.
+      With Dr. Smith's program and our suite of analysis tools, we have been able to gain many insights into the 
+      dyanmics of the collisions of small molecules. Additionally, a cool feature of the trajectory program is the 
+      ability to make "collision movies" where one can see what a given interaction looks like classically. A 
+      screenshot taken from a Li<sub>2</sub>(A<sup>1</sup>&#931<sub>u</sub><sup style="position: relative; left: -.5em;">+</sup>)-Xe 
+      collision movie is shown above. 
+    </p>
+    <p>
+      Experimentally, our group uses a dispersed laser induced fluorescence procedure to
+      determine absolute level-to-level rate coefficients. First, we use a
+      continuous-wave single-frequency laser to prepare the molecules into a
+      single electronically excited rovibrational state (a specific <em>v<sub>i</sub> , j<sub>i</sub></em>
+      combination). Then we examine the resulting spectrum, which consists of strong
+      "parent lines" from the fluorescence of molecules from the laser-excited
+      state and weaker "satellite lines" from the fluorescence of molecules that
+      were laser-excited and subsequently excited via a collision. We then use
+      the data from the experimentally determined parent and satellite line
+      intensities in calculating our level-resolved rate constants.
+    </p>
+    <img class="vid" controls src="expt_concept.png" controls style="width: 30%" />
+    <p>
+      The figure above has been adapted from one created by Dr. Stewart and is a helpful 
+      tool in visualizing our experimental procedure. Transition (A) shows the laser exciting 
+      molecules into their first electronic excited state. From that point the molecules that 
+      do not undergo a collision while excited fluoresce (parent lines) to another level 
+      of the ground state (C). Those that do undergo a collision are raised to a higher excited 
+      state (B) and then fluoresce (satellite lines) to a different level of the ground state (D).
+    </p>
+    <h3>Initial Work</h3>
+    <p>
+      Part of my initial training once joining the lab consisted of assisting our lab's
+      graduate student, Denuwan Vithanage, thermally stabilize our etalon. The group's laser 
+      previously had long-term stability issues, but when Denuwan still observed a frequency drift after 
+      attempts to stabilize the laser, he decided it would be 
+      best to investigate our measurement apparatus. I then helped him conduct temperature 
+      measurements and insulate our etalon. In short time, it was seen that our laser was stable.
+    </p>
+    <p>
+      My subsequent task was to characterize our group's CCD camera, which outputs the 
+      molecular spectra that we analyze to extract rate constants. The camera, like all other 
+      detection apparatuses, innately outputs noise. My job was to attain a better understanding of 
+      how the camera works and develop a stretegy to adjust our data taking procedure to enhance our 
+      signal to noise ratio. After both of those projects were completed, the group was able to 
+      move on with confidence to pursue Denuwan's benchmark experiments on microscopic reversibility.
+    </p>
+    <h3>MA Project: Vibrational Energy Transfer</h3>
+    <p>
+      Traditionally, vibrational energy transfer in atom-diatom collision systems is 
+      modelled collinearly, with the incoming atom striking the end of the diatom, inducing a 
+      compression that in turn vibrationally excites the diatom. Such collisions are 
+      referred to as end impacts, and are a well-known mechanism of vibrational 
+      energy transfer. It is also possible to vibrationally excite the diatom by expanding 
+      its bond. Such collisions involve the projectile atom colliding with the 
+      diatom on a trajectory that is nearly perpendicular to the diatomic bond, and these 
+      collisions are denoted as side impacts. The side impact mechanism has been significantly 
+      less characterized than the end impact mechanism, which leaves us many open questions to explore.
+    </p>
+    <p>
+      This work will be both computational and experimental. Computational work will range from analyzing the
+      results of Monte Carlo simulations of millions of classical trajectories to studying single collisions.
+      Analysis from the computational work will not only provide dynamical insights, but also guidance on 
+      which systems we should experimentally investigate. While our group has previously published experimental
+      evidence for the significance of the side impact mechanism, this work aims to substantially strengthen 
+      that evidence and provide benchmark experimental results in the study of the side impact mechanism.
+      One of the applications of this work is modeling energy flow in out-of-equilibrium 
+      gases. Some interesting cases of such gases are those excited by the 
+      shockwaves from supersonic flight and atmospheric entry of a spacecraft. A more complete   
+      understanding of those systems is especially vital to organizations like NASA, which has 
+      previously supported our group's work.</p>
+    <hr id="ORNL" />
+    <br />
+    <h2>Nuclear Structure and Nuclear Astrophysics Group (ORNL)</h2>
+    <h3>Optical Transparency of Graphene</h3>
+    <p>
+      My first task at ORNL was to conduct a literature search for and draft
+      sections of a paper (work remains unpublished) regarding the optical
+      transparency of graphene in the vacuum ultraviolet regime (VUV). The group
+      investigated this topic to evalute graphene's potential to be used as a
+      low-cost VUV photodetector. The group is interested in the VUV wavelengths
+      because scintillators based on liquid noble gases are commonly used for
+      detection in particle physics experiments, and liquified noble gases
+      scintillate in the VUV regime. Such experiments include but are not
+      limited to neutrino physics, neutrinoless double beta decay, and dark
+      matter searches. There are multiple ways to detect VUV photons in these
+      experiments, but with the increasing scales of these experiments it is
+      becoming increasingly expensive to do so directly (without using a
+      wavelength shifter). Many of the proposed low-cost designs use a planar
+      photodiode configuration where an NP junction lies between two electrodes.
+      In order to detect VUV photons, one of the electrodes must be transparent
+      to VUV light. Graphene is known to be nealry transparent (<a
+        href="https://www.science.org/doi/10.1126/science.1156965"
+        >a single layer is ~98% transparent</a
+      >) in the visible regime, but since liquid argon scintillates at 128nm,
+      which is well below the lower wavelength cutoff for visible light, further study was
+      needed to determine graphene's VUV transparency. The group examined the
+      optical transparency of single and multi-layer graphene in the range of
+      115 to 350nm, and the results were promising for graphene's use as a
+      low-cost VUV photodetector.
+    </p>
+    <h3>Assembly of 3D-Printed Scintillation Detectors</h3>
+    <p>
+      The next project I joined was the assembly of 3D-printed scintillation
+      detectors. My work began with a study of a model adhesive (one with similar properties to the proposed adhesive). 
+      The investigation yielded sufficient data to configure the settings of the adhesive dispenser that was used in the assembly process.
+      I then determined the most efficient and material-conserving workflow for the fabrication procedure. 
+      Following the conclusing of my work the process became successfully fully automated with 
+      a robotic arm. I also became fascinated by the group's inverted resin 3D printer.
+      For those unfamiliar with this type of printer, there is a pool
+      of resin at its base and the build plate descends from the top down to the resin pool when printing begins. 
+      There is a UV light source below the resin pool that flashes in a specified pattern
+      to cure the resin to the build plate. The build plate is then raised by a predetermined layer height, and 
+      the process is repeated where each layer is cured to the layer above it until the print is completed. 
+      I was captivated by this printing process &mdash; it looked like the printed object was being slowly pulled out of the 
+      shallow resin pool &mdash; and learning that group members were able to formulate resins with a 
+      variety of optical and mechanical properties only further piqued my interest in this procedure.
+    </p>
+    <h3>Calibration and Preparation of Stilbene Radiation Detectors</h3>
+    <p>My final project at ORNL involved calibrating stilbene radiation detectors for use in a 
+      nuclear physics experiment at the University of Notre Dame. These detectors have an array 
+      of applications from research to nuclear nonproliferation. Crystalline stilbene is an organic 
+      scintillator that is highly sensitive to fast neutrons (those with a kinetic energy above 1 MeV) 
+      in a gamma ray background. The stilbene detectors used in this experiment only made up a subset 
+      of the suite of instruments that were used for data collection, which also included gamma ray and 
+      charged particle detectors. The stilbene detectors, all of which were coupled to photomultiplier tubes (PMTs), can be 
+      seen above my head in the picture on my homepage. Since the experimental procedure involved 
+      collecting data at different energy levels, the detectors needed to be calibrated such that 
+      that they didn't saturate at the higher energies or have too low of a signal to noise ratio at 
+      lower energies. In order to avoid both of these potential shortcomings, the plan was to change the voltages of the detectors 
+      as the energy changed in order to extract the highest quality data possible. A Cs-137 radiation source was used to 
+      generate pulse height spectra for each detector at varying voltage settings. This calibration 
+      data provided us sufficient information to calculate the optimal voltages for each detector for each 
+      energy studied in the experiment.</p>
+    <hr id="WTICS" />
+    <br />
+    <h2>Wave Transport in Complex Systems Laboratory (Wesleyan)</h2>
+    <p>
+      While part of Dr. Kottos's group, my project focused on sublinear sensing.
+      Most sensors are linear, in that their response signal is directly
+      proportional to the input perturbation. To aid in the explanation, I have
+      provided a figure below that has been adapted from a previous one created
+      by Dr. Kononchuk. This figure is not based on a real system; it is being
+      used solely as an explanatory tool. We see below that if one wanted to
+      construct a linear sensor that was especially sensitive to small
+      perturbations, then they would have to significantly reduce the sensor's
+      dyanmic range (the ratio of the maximum and minimum perturbations that a
+      sensor can measure). However, if the sensor has a nonlinear response, then
+      it will have an expanded dynamic range and augmented sensitivity to small
+      perturbations in comparison to a linear sensor. From this, one can clearly
+      see the advantages that come with a nonlinear sensing device.
+    </p>
+    <img class="vid" controls src="Sensing.png" controls style="width: 30%" />
+    <p>
+      The method we used to realize such a scheme was to implement a setup based
+      on Wigner's Cusp Anomalies (WCAs). These cusps are characterized by an
+      output variable that is proportional to the square root of its input
+      variable. WCAs are more formally defined as square-root singularites in
+      the differential scattering cross section around the energy threshold of a
+      newly opened channel. While they were first studied in the context of
+      nuclear physics, WCAs also manifest themselves in other settings such as
+      quantum mechanics, optics, and photonics. Our work showed that these cusps
+      can be used in more than isolation: we demonstrated setups that exhibited
+      two-sided cusps as well as systems with multiple unique cusps. Two-sided
+      cusps are especially advantageous as they are hyper-sensitive in both the
+      positive and negaitve directions, making them ideal for sensing
+      observables such as acceleration or rotation. Setups with multiple cusps
+      are characteristic of multimode systems; they allow for simultaneous,
+      enhanced sensing of multiple independent observables.
+    </p>
+    <p>
+      As part of our theoretical study, we conducted both numerical simulations
+      and COMSOL Multiphysics simulations. Results of each of the simulations
+      are included in the poster I produced for the project. I encourage you to
+      view the poster and accompanying overview video for more information on
+      this project (both can be seen below). For more information on Dr.
+      Kottos's group you can visit their website
+      <a href="https://cqdmp.research.wesleyan.edu">here</a>.
+    </p>
+
+    <p><a href="Clifford_WCA_poster.pdf">Link to WCA poster</a></p>
+
+    <iframe
+      class="vid"
+      width="70%"
+      height="500"
+      src="https://www.youtube.com/embed/pfBzeTXamtk"
+      title="YouTube video of WCA overview"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <br />
+    <br />
     <br />
 
     <!-- <div id="navbar-bottom" class="fixed-nav-bar">
