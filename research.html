@@ -104,25 +104,24 @@
       While all atomic interactions are inherently quantum, 
       the Li<sub>2</sub>(A<sup>1</sup>&#931<sub>u</sub><sup style="position: relative; left: -.5em;">+</sup>)-rare gas systems 
       we study are highly classical, so we can extract valuable information from 
-      classical treatment in addition to exact non-reactive quantum scattering calculations done via MOLSCAT.
-      Our group has the ability to study detailed classical trajectories, run computationally expensive quantum calculations on 
-      Wesleyan's high performance computing center (HPCC), and analyze experimental collision data when we study a given system. 
+      classical treatment in addition to non-reactive quantum scattering calculations done via MOLSCAT.
+      Our group has the ability to perform Monte Carlo simulations of classical trajectories, run exact quantum mechanical calculations, and analyze experimental collision data when we study a given system. 
       This threefold method of investigation allows the group to be rather thorough in our work. 
 
     </p>
     <h4>Computational</h4>
     <p>
-      Our group primarily uses a classical trajectory program written in 
+      Our group primarily uses a classical trajectory program written
       by Dr. Neil Smith to study collisions in a quasi-classical manner.
       The program makes use of action angle variables, which have been shown to significantly reduce computational time and allows 
       us to trivially determine the final rovibronic states (denoted by the vibrational and rotational quantum 
       numbers <em>v</em> and <em>j</em> ) of our molecules. We use a modified harmonic oscillator 
-      to model the diatomic interaction and have an array of choices for the modeling of collisions.
-      The most common way we model our collision system is with an <em>ab initio</em> potential surface (one 
-      that is calculated from the principles of quantum mechanics) because they strongly agree with experimental results.
+      to model the diatomic interaction and can choose how we model the interaction potential of the collision partners.
+      The most common way we model our collision systems is with <em>ab initio</em> potential energy surfaces (one 
+      that is calculated from the principles of quantum mechanics). They provide the most realistic model of the interaction and often strongly agree with experimental results.
       With Dr. Smith's program and our suite of analysis tools, we have been able to gain many insights into the 
-      dyanmics of the collisions of small molecules. Additionally, a cool feature of the trajectory program is the 
-      ability to make "collision movies" where one can see what a given interaction looks like classically. A 
+      dyanmics of the collisions of small molecules. Additionally, a noteworthy feature of the trajectory program is the 
+      ability to make "collision movies" where one can visualize any given classical trajectory. A 
       screenshot taken from a Li<sub>2</sub>(A<sup>1</sup>&#931<sub>u</sub><sup style="position: relative; left: -.5em;">+</sup>)-Xe 
       collision movie is shown above. 
     </p>
@@ -132,7 +131,7 @@
       determine absolute level-to-level rate coefficients. First, we use a
       continuous-wave single-frequency laser to prepare the molecules into a
       single electronically excited rovibrational state (a specific <em>v<sub>i</sub> , j<sub>i</sub></em>
-      combination). Then we examine the resulting spectrum, which consists of strong
+      combination). Then we examine the resulting collisional spectrum, which consists of strong
       "parent lines" from the fluorescence of molecules from the laser-excited
       state and weaker "satellite lines" from the fluorescence of molecules that
       were laser-excited and subsequently excited via a collision. We then use
@@ -144,12 +143,12 @@
     <img class="vid2" src="expt_concept.png" controls style="width: 36%" controls style="left: 0px"/>
     <img class="vid2" controls src="expt_spectrum_USE.png" controls style="width: 30%" />
     <p>
-      The figure above has been adapted from one created by Dr. Stewart and is a helpful 
+      The figure on the left is a helpful 
       tool in visualizing our experimental procedure. Transition (A) shows the laser exciting 
       molecules into their first electronic excited state. From that point the molecules that 
-      do not undergo a collision while excited fluoresce (parent lines) to another level 
-      of the ground state (C). Those that do undergo a collision are raised to a higher excited 
-      state (B) and then fluoresce (satellite lines) to a different level of the ground state (D).
+      do not undergo a collision while excited fluoresce (parent lines) to the electronic ground state (C). Those that undergo a collision are raised to a higher electronic excited 
+      state (B) and then fluoresce (satellite lines) to a different rovibrational level of the electronic ground state (D). The figure on the right shows experimental data with the parent line
+      and some satellite lines labelled.
     </p>
     <!-- <h3>Initial Work</h3>
     <p>
@@ -180,8 +179,8 @@
       will aid in shrinking this knowldge gap by characterizing the side impact mechanism.
     </p>
     <p>
-      This work will be both computational and experimental. Computational work will range from analyzing the
-      results of Monte Carlo simulations of millions of classical trajectories to studying single collisions.
+      This work will be both computational and experimental. Computational work will include analyzing the
+      results of classical trajectories simulations, studying single collisions, and creating new <em>ab initio</em> potential energy surfaces with Gaussian 16.
       Analysis from the computational work will not only provide dynamical insights but also guidance on 
       which systems we should experimentally investigate. While our group has previously published experimental
       evidence for the significance of the side impact mechanism, this work aims to substantially strengthen 
